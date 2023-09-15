@@ -6,16 +6,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Get Hex Code of Background Color</title>
 		<link rel="stylesheet" href="style.css" />
-		<script src="./app.js" defer></script>
 	</head>
 	<body>
 		<div class="container" id="root">
 			<h1>
 				Change The Background Color By Clicking The Following Button
 			</h1>
-			<input type="text" disabled value="#000000" id="output" />
-			<button id="change-btn">Change Color</button>
+			<div class="input-group">
+				<input type="text" disabled value="#000000" id="output" />
+				<button
+					class="copy-btn"
+					id="copy-btn"
+					title="copy to clipboard"
+				>
+					&copy; Copy
+				</button>
+			</div>
+			<button class="change-btn" id="change-btn">Change Color</button>
 		</div>
-        <script src="app.js"></script>
+		<script src="./app.js" defer></script>
 	</body>
 </html>
